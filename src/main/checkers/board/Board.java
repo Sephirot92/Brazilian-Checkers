@@ -1,14 +1,21 @@
 package main.checkers.board;
 
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import main.checkers.board.pawns.Figure;
 import main.checkers.board.pawns.FigureColor;
 import main.checkers.board.pawns.None;
 import main.checkers.board.pawns.Pawn;
+import sun.plugin2.util.ColorUtil;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static sun.plugin.javascript.navig.JSType.Image;
 
 public class Board {
     private List<BoardRow> rows = new ArrayList<>();
@@ -53,13 +60,20 @@ public class Board {
         setFigure(7,5, new Pawn(FigureColor.BLACK));
         setFigure(7,7, new Pawn(FigureColor.BLACK));
     }
-    ImageView imageView = null;
     public void displayOnGrid(GridPane gridPane){
         gridPane.getChildren().clear();
         for(int i = 0; i<8; i++) { //iterate over rows
             for (int j = 0; j < 8; j++) { //iterate over columns
-                ImageView imageView =  new ImageView(""); //decide what image you will place in here basing on what you will receive from getFigure(col, row);
-                gridPane.add(imageView, j, i);
+                if (j%2 ==0 && i%2 ==1) {
+                    Image blackChecker = new Image(getClass().getResourceAsStream("/img/BlackChecker.jpg"));
+                    ImageView imageView = new ImageView(blackChecker);//decide what image you will place in here basing on what you will receive from getFigure(col, row);
+                    gridPane.getChildren().add(new Circle(50,50,50, Color.rgb(20,20,20)));
+
+                }else if (j%2 ==1 && i%2==0 ){
+                    Image redChecker = new Image(getClass().getResourceAsStream("/img/RedCheckers.jpg"));
+                    ImageView imageView1 = new ImageView(redChecker);//decide what image you will place in here basing on what you will receive from getFigure(col, row);
+                    gridPane.add(imageView1, j, i);
+                }
             }
         }
     }
