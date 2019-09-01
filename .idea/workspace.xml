@@ -3,11 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="5972f885-18dd-4365-ba15-1018c3dc3a89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/META-INF/BrazilianCheckers.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/CheckersBoard2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/CheckersBoard2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/BrazilianCheckers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/BrazilianCheckers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Figure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/FigureColor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/FigureColor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/None.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/None.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Pawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Pawn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Queen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Queen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/game/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/CheckersBoard2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/CheckersBoard2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/BrazilianCheckers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/BrazilianCheckers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/Figure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/FigureColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/FigureColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/None.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/None.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/CheckersBoard2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/CheckersBoard2.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,18 +44,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
-  </component>
   <component name="ProjectId" id="1QA2TBMtuGUmWxqL2L0WjMVj00a" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -111,7 +120,10 @@
       <workItem from="1567097796699" duration="4390000" />
       <workItem from="1567194593068" duration="4253000" />
       <workItem from="1567199096185" duration="2879000" />
-      <workItem from="1567228551058" duration="6420000" />
+      <workItem from="1567228551058" duration="8555000" />
+      <workItem from="1567344543320" duration="7639000" />
+      <workItem from="1567355888613" duration="708000" />
+      <workItem from="1567362450661" duration="8991000" />
     </task>
     <servers />
   </component>

@@ -11,5 +11,7 @@ public class Game {
         this.board = board;
         this.gridPane = gridPane;
     }
-
+    public void playGame() {
+        board.displayOnGrid(gridPane);
+    }
 }

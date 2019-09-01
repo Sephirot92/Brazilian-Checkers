@@ -1,5 +1,9 @@
 package main.checkers.board;
 
+import javafx.geometry.HPos;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.geometry.VPos;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.ColumnConstraints;
@@ -12,9 +16,11 @@ import main.checkers.board.pawns.None;
 import main.checkers.board.pawns.Pawn;
 import sun.plugin2.util.ColorUtil;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static javax.swing.SwingConstants.CENTER;
 import static sun.plugin.javascript.navig.JSType.Image;
 
 public class Board {
@@ -61,20 +67,35 @@ public class Board {
         setFigure(7,7, new Pawn(FigureColor.BLACK));
     }
     public void displayOnGrid(GridPane gridPane){
+        initBoard();
         gridPane.getChildren().clear();
         for(int i = 0; i<8; i++) { //iterate over rows
-            for (int j = 0; j < 8; j++) { //iterate over columns
-                if (j%2 ==0 && i%2 ==1) {
-                    Image blackChecker = new Image(getClass().getResourceAsStream("/img/BlackChecker.jpg"));
-                    ImageView imageView = new ImageView(blackChecker);//decide what image you will place in here basing on what you will receive from getFigure(col, row);
-                    gridPane.getChildren().add(new Circle(50,50,50, Color.rgb(20,20,20)));
+            for (int j = 0; j < 8; j++) {
+                    Circle c = null;
+                    if (getFigure(j,i) instanceof Pawn){
+                        if (getFigure(j,i).getColor().equals(FigureColor.RED)){
 
-                }else if (j%2 ==1 && i%2==0 ){
-                    Image redChecker = new Image(getClass().getResourceAsStream("/img/RedCheckers.jpg"));
-                    ImageView imageView1 = new ImageView(redChecker);//decide what image you will place in here basing on what you will receive from getFigure(col, row);
-                    gridPane.add(imageView1, j, i);
-                }
+                            c = new Circle(20,20,20, Color.rgb(100,0,0));
+                            gridPane.add(c, j ,i);
+                            gridPane.setPadding(new Insets(50,0,50,50));
+                            gridPane.setHgap(0);
+                            gridPane.setVgap(0);
+                            gridPane.setAlignment(Pos.CENTER);
+                            gridPane.setValignment(gridPane, VPos.CENTER);
+                        }else{
+                            c = new Circle(20, 20, 20, Color.rgb(0,0, 0));
+                            gridPane.add(c, j ,i);
+                            gridPane.setPadding(new Insets(50,0,50,50));
+                            gridPane.setHgap(0);
+                            gridPane.setVgap(0);
+                            gridPane.setAlignment(Pos.CENTER);
+                            gridPane.setValignment(gridPane, VPos.CENTER);
+                        }
+                    }
             }
         }
+        gridPane.setHgap(0);
+        gridPane.setVgap(0);
+        gridPane.setAlignment(Pos.CENTER);
     }
 }
