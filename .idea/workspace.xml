@@ -3,25 +3,30 @@
   <component name="ChangeListManager">
     <list default="true" id="5972f885-18dd-4365-ba15-1018c3dc3a89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/CheckersBoard2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/CheckersBoard2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/BlackChecker.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/BlackChecker.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/BlackCheckerQueen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/BlackCheckerQueen.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/RedCheckers.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/RedCheckers.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/RedCheckersQueen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/RedCheckersQueen.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/BrazilianCheckers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/BrazilianCheckers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Figure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/FigureColor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/FigureColor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/None.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/None.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Pawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Pawn.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Queen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Queen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/game/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/CheckersBoard2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/CheckersBoard2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/BlackChecker.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/BlackChecker.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/BlackCheckerQueen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/BlackCheckerQueen.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/RedCheckers.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/RedCheckers.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/RedCheckersQueen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/RedCheckersQueen.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/BrazilianCheckers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/BrazilianCheckers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/FigureColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/FigureColor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/None.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/None.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/Pawn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/Queen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/CheckersBoard2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/CheckersBoard2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/BlackChecker.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/BlackChecker.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/BlackCheckerQueen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/BlackCheckerQueen.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/RedCheckers.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/RedCheckers.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/RedCheckersQueen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/RedCheckersQueen.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +55,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -123,7 +129,12 @@
       <workItem from="1567228551058" duration="8555000" />
       <workItem from="1567344543320" duration="7639000" />
       <workItem from="1567355888613" duration="708000" />
-      <workItem from="1567362450661" duration="8991000" />
+      <workItem from="1567362450661" duration="10110000" />
+      <workItem from="1567436127210" duration="2084000" />
+      <workItem from="1567440708606" duration="600000" />
+      <workItem from="1567528361637" duration="3844000" />
+      <workItem from="1567540659215" duration="110000" />
+      <workItem from="1567543313607" duration="2830000" />
     </task>
     <servers />
   </component>

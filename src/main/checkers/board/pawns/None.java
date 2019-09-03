@@ -1,6 +1,5 @@
 package main.checkers.board.pawns;
 
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 public class None implements Figure {

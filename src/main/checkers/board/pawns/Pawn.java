@@ -19,11 +19,15 @@ public class Pawn implements Figure {
         if(color == FigureColor.RED){
             Image redPawn = new Image("RedCheckers.jpg");
             ImageView redP = new ImageView(redPawn);
+            redP.setFitHeight(90);
+            redP.setFitWidth(90);
             pawnImage = redP;
             return pawnImage;
         }else {
             Image blackPawn = new Image("BlackChecker.jpg");
             ImageView blackP = new ImageView(blackPawn);
+            blackP.setFitHeight(90);
+            blackP.setFitWidth(90);
             pawnImage = blackP;
             return pawnImage;
         }
