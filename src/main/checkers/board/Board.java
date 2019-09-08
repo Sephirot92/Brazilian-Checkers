@@ -93,14 +93,17 @@ public class Board {
 
     public void move(int x1, int y1, int x2, int y2) {
         FigureColor color = getFigure(x1, y1).getColor();
-        FigureColor colorOfFigureToBeKilled = getFigure(x2, y2).getColor();
+
         FigureColor isThereAFigureColor = getFigure(x2, y2).getColor();
         if (isRedOrBlackChoosen(color) && (color != lastColor)) {
-            if(isThereAnotherFigure(x1, y1, x2, y2, color, isThereAFigureColor)) {
+            if (isThereAnotherFigure(x1, y1, x2, y2, isThereAFigureColor)) {
                 if (isMoveDiagonalOneField(x1, y1, x2, y2, color)) {
                     doMove(x1, y1, x2, y2);
                     lastColor = color;
-                } else if(isMoveGoingToKill(x1, y1, x2, y2, color)){
+                } else {
+                    int dy = (y2 > y1) ? 1 : -1;
+                    int dx = (x2 > x1) ? 1 : -1;
+                    FigureColor colorOfFigureToBeKilled = getFigure(x2 - dx, y2 - dy).getColor();
                     if (color != colorOfFigureToBeKilled) {
                         doKill(x1, y1, x2, y2);
                         lastColor = color;
@@ -114,21 +117,17 @@ public class Board {
     private boolean isMoveDiagonalOneField(int x1, int y1, int x2, int y2, FigureColor color) {
         return (color == FigureColor.BLACK && y1 - y2 == 1 && Math.abs(x2 - x1) == 1) || (color == FigureColor.RED && y2 - y1 == 1 && Math.abs(x2 - x1) == 1);
     }
-    private boolean isMoveGoingToKill(int x1, int y1, int x2, int y2, FigureColor color) {
-        return (color == FigureColor.BLACK && (y1+1) - y2 == 2 && Math.abs((x2+1) - x1) == 2) || (color == FigureColor.RED && (y2 +1) - y1 == 2 && Math.abs((x2+1) - x1) == 2);
-    }
 
     private boolean isRedOrBlackChoosen(FigureColor color) {
         return color == FigureColor.RED || color == FigureColor.BLACK;
     }
 
-    private boolean isThereAnotherFigure(int x1, int y1, int x2, int y2, FigureColor figureColor, FigureColor isThereAFigureColor){
+    private boolean isThereAnotherFigure(int x1, int y1, int x2, int y2, FigureColor isThereAFigureColor) {
         boolean check;
-        figureColor = getFigure(x1, y1).getColor();
         isThereAFigureColor = getFigure(x2, y2).getColor();
-        if (isThereAFigureColor == FigureColor.NONE){
+        if (isThereAFigureColor == FigureColor.NONE) {
             check = true;
-        }else{
+        } else {
             check = false;
         }
         return check;
@@ -141,10 +140,13 @@ public class Board {
         setFigure(x1, y1, new None());
 
     }
+
     private void doKill(int x1, int y1, int x2, int y2) {
+        int dy = (y2 > y1) ? 1 : -1;
+        int dx = (x2 > x1) ? 1 : -1;
         Figure figure = getFigure(x1, y1);
         setFigure(x2, y2, figure);
-        setFigure(x2-1, y2-1, new None());
+        setFigure(x2 - dx, y2 - dy, new None());
         setFigure(x1, y1, new None());
 
     }

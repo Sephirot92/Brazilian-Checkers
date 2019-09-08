@@ -65,5 +65,4 @@ public class BrazilianCheckers extends Application {
         primaryStage.show();
     }
 }
-//Fill the board with none figures. None and pawn and Queen should drive from common class called figure. board should have Collection - make a new class representing a rows
 

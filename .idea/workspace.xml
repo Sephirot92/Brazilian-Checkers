@@ -4,11 +4,8 @@
     <list default="true" id="5972f885-18dd-4365-ba15-1018c3dc3a89" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/None.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/None.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/BrazilianCheckers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/BrazilianCheckers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/FigureColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/FigureColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/None.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/None.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +118,8 @@
       <workItem from="1567710509122" duration="3960000" />
       <workItem from="1567844034787" duration="5505000" />
       <workItem from="1567876755924" duration="1899000" />
-      <workItem from="1567929577291" duration="4931000" />
+      <workItem from="1567929577291" duration="9996000" />
+      <workItem from="1567957277279" duration="616000" />
     </task>
     <servers />
   </component>
