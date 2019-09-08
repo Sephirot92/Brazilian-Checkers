@@ -7,6 +7,7 @@ public class None implements Figure {
     public FigureColor getColor() {
         return FigureColor.NONE;
     }
+
     @Override
     public ImageView getImage(FigureColor color) {
         ImageView noneImage = null;

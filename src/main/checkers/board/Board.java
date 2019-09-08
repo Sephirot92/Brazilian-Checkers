@@ -1,6 +1,5 @@
 package main.checkers.board;
 
-import com.sun.deploy.util.BlackList;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.geometry.VPos;
@@ -15,6 +14,8 @@ import java.util.List;
 
 public class Board {
     private List<BoardRow> rows = new ArrayList<>();
+    protected FigureColor lastColor = FigureColor.BLACK;
+
 
     public Board() {
         for (int i = 0; i < 8; i++)
@@ -92,28 +93,59 @@ public class Board {
 
     public void move(int x1, int y1, int x2, int y2) {
         FigureColor color = getFigure(x1, y1).getColor();
-        if (isRedOrBlackChoosen(color)) {
-            if (isMoveDiagonalOneField(x1, y1, x2, y2, color)) {
-                doMove(x1, y1, x2, y2);
+        FigureColor colorOfFigureToBeKilled = getFigure(x2, y2).getColor();
+        FigureColor isThereAFigureColor = getFigure(x2, y2).getColor();
+        if (isRedOrBlackChoosen(color) && (color != lastColor)) {
+            if(isThereAnotherFigure(x1, y1, x2, y2, color, isThereAFigureColor)) {
+                if (isMoveDiagonalOneField(x1, y1, x2, y2, color)) {
+                    doMove(x1, y1, x2, y2);
+                    lastColor = color;
+                } else if(isMoveGoingToKill(x1, y1, x2, y2, color)){
+                    if (color != colorOfFigureToBeKilled) {
+                        doKill(x1, y1, x2, y2);
+                        lastColor = color;
+                    }
+                }
             }
         }
-        //shieet.... Game Logic part :D
-        //create method checking is field empty
-
-
     }
+
 
     private boolean isMoveDiagonalOneField(int x1, int y1, int x2, int y2, FigureColor color) {
         return (color == FigureColor.BLACK && y1 - y2 == 1 && Math.abs(x2 - x1) == 1) || (color == FigureColor.RED && y2 - y1 == 1 && Math.abs(x2 - x1) == 1);
+    }
+    private boolean isMoveGoingToKill(int x1, int y1, int x2, int y2, FigureColor color) {
+        return (color == FigureColor.BLACK && (y1+1) - y2 == 2 && Math.abs((x2+1) - x1) == 2) || (color == FigureColor.RED && (y2 +1) - y1 == 2 && Math.abs((x2+1) - x1) == 2);
     }
 
     private boolean isRedOrBlackChoosen(FigureColor color) {
         return color == FigureColor.RED || color == FigureColor.BLACK;
     }
 
+    private boolean isThereAnotherFigure(int x1, int y1, int x2, int y2, FigureColor figureColor, FigureColor isThereAFigureColor){
+        boolean check;
+        figureColor = getFigure(x1, y1).getColor();
+        isThereAFigureColor = getFigure(x2, y2).getColor();
+        if (isThereAFigureColor == FigureColor.NONE){
+            check = true;
+        }else{
+            check = false;
+        }
+        return check;
+    }
+
     private void doMove(int x1, int y1, int x2, int y2) {
+
         Figure figure = getFigure(x1, y1);
         setFigure(x2, y2, figure);
         setFigure(x1, y1, new None());
+
+    }
+    private void doKill(int x1, int y1, int x2, int y2) {
+        Figure figure = getFigure(x1, y1);
+        setFigure(x2, y2, figure);
+        setFigure(x2-1, y2-1, new None());
+        setFigure(x1, y1, new None());
+
     }
 }
