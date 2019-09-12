@@ -16,4 +16,12 @@ public class Score {
     public int getBlackScore() {
         return blackScore;
     }
+
+    @Override
+    public String toString() {
+        return "Score{" +
+                "redScore=" + redScore +
+                ", blackScore=" + blackScore +
+                '}';
+    }
 }

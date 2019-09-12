@@ -10,6 +10,8 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import main.checkers.board.Board;
 import main.checkers.board.Coordinates;
+import main.checkers.board.ai.BoardScoreCalculator;
+import main.checkers.board.ai.Score;
 import main.checkers.game.Game;
 
 import static javax.swing.SwingConstants.CENTER;
@@ -58,8 +60,6 @@ public class BrazilianCheckers extends Application {
         grid.setAlignment(Pos.CENTER);
 
         game.playGame();
-        //Inside class (this one!! ) you have acces to board class (With all pawns and game logic) and Grid, where
-        // you will be able to display figures form the board
 
         primaryStage.setTitle("Brazilian Checkers");
         primaryStage.setScene(scene);

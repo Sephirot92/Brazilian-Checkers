@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5972f885-18dd-4365-ba15-1018c3dc3a89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/checkers/board/Coordinates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/checkers/board/ai/BordScoreCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/checkers/board/ai/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/checkers/board/ai/BoardScoreCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/BrazilianCheckers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/BrazilianCheckers.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Board.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/game/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/BrazilianCheckers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/BrazilianCheckers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/ai/BordScoreCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/ai/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/ai/Score.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/game/Game.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -132,7 +132,7 @@
       <workItem from="1567957277279" duration="1988000" />
       <workItem from="1567984231974" duration="589000" />
       <workItem from="1568139635616" duration="3485000" />
-      <workItem from="1568312488730" duration="831000" />
+      <workItem from="1568312488730" duration="11755000" />
     </task>
     <servers />
   </component>

@@ -4,6 +4,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.geometry.VPos;
 import javafx.scene.layout.GridPane;
+import main.checkers.board.ai.BoardScoreCalculator;
 import main.checkers.board.pawns.Figure;
 import main.checkers.board.pawns.FigureColor;
 import main.checkers.board.pawns.None;
@@ -15,10 +16,6 @@ import java.util.List;
 public class Board {
     private List<BoardRow> rows = new ArrayList<>();
     protected FigureColor lastColor = FigureColor.BLACK;
-
-    //Create a function to calculate points. It will receive rows as an argument and it will have to calculate points for exact set of pieces on Board.
-    // Also - create a data structure to hold those clones of rows.
-    //Funkcja punktująca ma zwracać dwie liczby - obiekt, który będzie przechowywał dwie liczby.
 
     public Board() {
         for (int i = 0; i < 8; i++)
@@ -141,6 +138,8 @@ public class Board {
         setFigure(coordinatesAfterTheMoveIsDone.getX1(), coordinatesAfterTheMoveIsDone.getY1(), figure);
         setFigure(moveBeggingCoordinates.getX1(), moveBeggingCoordinates.getY1(), new None());
 
+        BoardScoreCalculator calculator = new BoardScoreCalculator();
+        calculator.calculateScore(rows);
     }
 
     private void doKill(Coordinates coordinatesOfFigureWhichWillKill, Coordinates coordinatesOfFigureWhichWillBeKilled) {

@@ -4,6 +4,8 @@ import javafx.scene.layout.GridPane;
 import main.checkers.board.Board;
 import main.checkers.board.Coordinates;
 
+import java.io.IOException;
+
 public class Game {
     private Board board;
     private GridPane gridPane;
