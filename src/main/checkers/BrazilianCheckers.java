@@ -9,6 +9,7 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import main.checkers.board.Board;
+import main.checkers.board.Coordinates;
 import main.checkers.game.Game;
 
 import static javax.swing.SwingConstants.CENTER;
@@ -39,7 +40,7 @@ public class BrazilianCheckers extends Application {
             int x = (int) (e.getX() / 100);
             int y = (int) (e.getY() / 100);
             System.out.println(x + " " + y);
-            game.move(x, y);
+            game.move(new Coordinates(x, y));
         });
 
 

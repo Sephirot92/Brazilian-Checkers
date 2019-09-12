@@ -16,6 +16,9 @@ public class Board {
     private List<BoardRow> rows = new ArrayList<>();
     protected FigureColor lastColor = FigureColor.BLACK;
 
+    //Create a function to calculate points. It will receive rows as an argument and it will have to calculate points for exact set of pieces on Board.
+    // Also - create a data structure to hold those clones of rows.
+    //Funkcja punktująca ma zwracać dwie liczby - obiekt, który będzie przechowywał dwie liczby.
 
     public Board() {
         for (int i = 0; i < 8; i++)
@@ -91,21 +94,20 @@ public class Board {
         gridPane.setAlignment(Pos.CENTER);
     }
 
-    public void move(int x1, int y1, int x2, int y2) {
-        FigureColor color = getFigure(x1, y1).getColor();
-
-        FigureColor isThereAFigureColor = getFigure(x2, y2).getColor();
+    public void move(Coordinates beginingCoordinates, Coordinates finalCoordinates) {
+        FigureColor color = getFigure(beginingCoordinates.getX1(), beginingCoordinates.getY1()).getColor();
+        FigureColor isThereAFigureColor = getFigure(finalCoordinates.getX1(), finalCoordinates.getY1()).getColor();
         if (isRedOrBlackChoosen(color) && (color != lastColor)) {
-            if (isThereAnotherFigure(x1, y1, x2, y2, isThereAFigureColor)) {
-                if (isMoveDiagonalOneField(x1, y1, x2, y2, color)) {
-                    doMove(x1, y1, x2, y2);
+            if (isThereAnotherFigure(finalCoordinates.getX1(), finalCoordinates.getY1(), isThereAFigureColor)) {
+                if (isMoveDiagonalOneField(new Coordinates(beginingCoordinates.getX1(), beginingCoordinates.getY1()), new Coordinates(finalCoordinates.getX1(), finalCoordinates.getY1()), color)) {
+                    doMove(new Coordinates(beginingCoordinates.getX1(), beginingCoordinates.getY1()), new Coordinates(finalCoordinates.getX1(), finalCoordinates.getY1()));
                     lastColor = color;
                 } else {
-                    int dy = (y2 > y1) ? 1 : -1;
-                    int dx = (x2 > x1) ? 1 : -1;
-                    FigureColor colorOfFigureToBeKilled = getFigure(x2 - dx, y2 - dy).getColor();
+                    int dy = (finalCoordinates.getY1() > beginingCoordinates.getY1()) ? 1 : -1;
+                    int dx = (finalCoordinates.getX1() > beginingCoordinates.getX1()) ? 1 : -1;
+                    FigureColor colorOfFigureToBeKilled = getFigure(finalCoordinates.getX1() - dx, finalCoordinates.getY1() - dy).getColor();
                     if (color != colorOfFigureToBeKilled) {
-                        doKill(x1, y1, x2, y2);
+                        doKill(new Coordinates(beginingCoordinates.getX1(), beginingCoordinates.getY1()), new Coordinates(finalCoordinates.getX1(), finalCoordinates.getY1()));
                         lastColor = color;
                     }
                 }
@@ -114,15 +116,15 @@ public class Board {
     }
 
 
-    private boolean isMoveDiagonalOneField(int x1, int y1, int x2, int y2, FigureColor color) {
-        return (color == FigureColor.BLACK && y1 - y2 == 1 && Math.abs(x2 - x1) == 1) || (color == FigureColor.RED && y2 - y1 == 1 && Math.abs(x2 - x1) == 1);
+    private boolean isMoveDiagonalOneField(Coordinates begginingCoordinates, Coordinates finalCoordinatesAfterMove, FigureColor color) {
+        return (color == FigureColor.BLACK && begginingCoordinates.getY1() - finalCoordinatesAfterMove.getY1() == 1 && Math.abs(finalCoordinatesAfterMove.getX1() - begginingCoordinates.getX1()) == 1) || (color == FigureColor.RED && finalCoordinatesAfterMove.getY1() - begginingCoordinates.getY1() == 1 && Math.abs(finalCoordinatesAfterMove.getX1() - begginingCoordinates.getX1()) == 1);
     }
 
     private boolean isRedOrBlackChoosen(FigureColor color) {
         return color == FigureColor.RED || color == FigureColor.BLACK;
     }
 
-    private boolean isThereAnotherFigure(int x1, int y1, int x2, int y2, FigureColor isThereAFigureColor) {
+    private boolean isThereAnotherFigure(int x2, int y2, FigureColor isThereAFigureColor) {
         boolean check;
         isThereAFigureColor = getFigure(x2, y2).getColor();
         if (isThereAFigureColor == FigureColor.NONE) {
@@ -133,21 +135,21 @@ public class Board {
         return check;
     }
 
-    private void doMove(int x1, int y1, int x2, int y2) {
+    private void doMove(Coordinates moveBeggingCoordinates, Coordinates coordinatesAfterTheMoveIsDone) {
 
-        Figure figure = getFigure(x1, y1);
-        setFigure(x2, y2, figure);
-        setFigure(x1, y1, new None());
+        Figure figure = getFigure(moveBeggingCoordinates.getX1(), moveBeggingCoordinates.getY1());
+        setFigure(coordinatesAfterTheMoveIsDone.getX1(), coordinatesAfterTheMoveIsDone.getY1(), figure);
+        setFigure(moveBeggingCoordinates.getX1(), moveBeggingCoordinates.getY1(), new None());
 
     }
 
-    private void doKill(int x1, int y1, int x2, int y2) {
-        int dy = (y2 > y1) ? 1 : -1;
-        int dx = (x2 > x1) ? 1 : -1;
-        Figure figure = getFigure(x1, y1);
-        setFigure(x2, y2, figure);
-        setFigure(x2 - dx, y2 - dy, new None());
-        setFigure(x1, y1, new None());
+    private void doKill(Coordinates coordinatesOfFigureWhichWillKill, Coordinates coordinatesOfFigureWhichWillBeKilled) {
+        int dy = (coordinatesOfFigureWhichWillBeKilled.getY1() > coordinatesOfFigureWhichWillKill.getY1()) ? 1 : -1;
+        int dx = (coordinatesOfFigureWhichWillBeKilled.getX1() > coordinatesOfFigureWhichWillKill.getX1()) ? 1 : -1;
+        Figure figure = getFigure(coordinatesOfFigureWhichWillKill.getX1(), coordinatesOfFigureWhichWillKill.getY1());
+        setFigure(coordinatesOfFigureWhichWillBeKilled.getX1(), coordinatesOfFigureWhichWillBeKilled.getY1(), figure);
+        setFigure(coordinatesOfFigureWhichWillBeKilled.getX1() - dx, coordinatesOfFigureWhichWillBeKilled.getY1() - dy, new None());
+        setFigure(coordinatesOfFigureWhichWillKill.getX1(), coordinatesOfFigureWhichWillKill.getY1(), new None());
 
     }
 }

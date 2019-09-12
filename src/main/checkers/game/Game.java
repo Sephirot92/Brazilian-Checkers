@@ -2,12 +2,12 @@ package main.checkers.game;
 
 import javafx.scene.layout.GridPane;
 import main.checkers.board.Board;
+import main.checkers.board.Coordinates;
 
 public class Game {
     private Board board;
     private GridPane gridPane;
-    private int oldX = -1;
-    private int oldY = -1;
+    private Coordinates oldCoordinates;
 
     public Game(Board board, GridPane gridPane) {
         this.board = board;
@@ -19,15 +19,13 @@ public class Game {
         board.displayOnGrid(gridPane);
     }
 
-    public void move(int x, int y) {
-        if (oldX == -1) {
-            oldX = x;
-            oldY = y;
+    public void move(Coordinates coordinates) {
+        if (oldCoordinates == null) {
+            oldCoordinates = coordinates;
         } else {
-            board.move(oldX, oldY, x, y);
+            board.move(oldCoordinates, coordinates);
             board.displayOnGrid(gridPane);
-            oldX = -1;
-            oldY = -1;
+            oldCoordinates = null;
         }
     }
 }
