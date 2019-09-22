@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Board {
+
+
     private List<BoardRow> rows = new ArrayList<>();
     protected FigureColor lastColor = FigureColor.BLACK;
 
@@ -150,5 +152,8 @@ public class Board {
         setFigure(coordinatesOfFigureWhichWillBeKilled.getX1() - dx, coordinatesOfFigureWhichWillBeKilled.getY1() - dy, new None());
         setFigure(coordinatesOfFigureWhichWillKill.getX1(), coordinatesOfFigureWhichWillKill.getY1(), new None());
 
+    }
+    public List<BoardRow> getRows() {
+        return rows;
     }
 }

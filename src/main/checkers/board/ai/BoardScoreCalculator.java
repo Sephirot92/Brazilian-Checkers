@@ -4,6 +4,7 @@ import main.checkers.board.Board;
 import main.checkers.board.BoardRow;
 import main.checkers.board.pawns.Figure;
 import main.checkers.board.pawns.FigureColor;
+import main.checkers.board.pawns.Pawn;
 
 import java.util.List;
 
@@ -18,14 +19,16 @@ public class BoardScoreCalculator {
         int scoreAtTheBegginignForRed = 0;
         int scoreAtTheBegginingForBlack = 0;
 
-        Score scoreByNumberOfPawnsLeft = new Score(scoreAtTheBegginignForRed, scoreAtTheBegginingForBlack);
-        for (int i = 0; i < rows.size(); i++) {
-            if (rows.get(i).equals(FigureColor.RED)) {
-                scoreAtTheBegginignForRed = scoreAtTheBegginignForRed + 1;
-            } else if (rows.get(i).equals(FigureColor.BLACK)) {
-                scoreAtTheBegginingForBlack = scoreAtTheBegginingForBlack + 1;
+        for (int row = 0; row < rows.size(); row++) {
+            for (int col = 0; col < rows.get(row).getCols().size(); col ++){
+                if (rows.get(row).getCols().get(col).getColor().equals(FigureColor.RED)) {
+                    scoreAtTheBegginignForRed = scoreAtTheBegginignForRed + row + 1;
+                } else if (rows.get(row).getCols().get(col).getColor().equals(FigureColor.BLACK)) {
+                    scoreAtTheBegginingForBlack = scoreAtTheBegginingForBlack + 8 - row;
+                }
             }
         }
+        Score scoreByNumberOfPawnsLeft = new Score(scoreAtTheBegginignForRed, scoreAtTheBegginingForBlack);
         return scoreByNumberOfPawnsLeft;
     }
 
@@ -35,4 +38,3 @@ public class BoardScoreCalculator {
     }
 }
 
-//po opracowaniu podepnij do move i zobacz jakie wyniki wyświetli jako syso.

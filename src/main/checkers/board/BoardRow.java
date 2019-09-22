@@ -14,7 +14,7 @@ public class BoardRow {
             cols.add(new None());
     }
 
-    List<Figure> getCols() {
+    public List<Figure> getCols() {
         return cols;
     }
 }
