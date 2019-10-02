@@ -2,24 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5972f885-18dd-4365-ba15-1018c3dc3a89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/checkers/board/Move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/checkers/board/ai/AI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/BoardRow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/BoardRow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/ai/BoardScoreCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/ai/BoardScoreCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Pawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Pawn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/game/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Coordinates.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Coordinates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Move.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Move.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/ai/AI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/ai/AI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/BoardRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/BoardRow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/ai/BoardScoreCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/ai/BoardScoreCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/ai/AI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/ai/AI.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -136,7 +146,11 @@
       <workItem from="1568139635616" duration="3485000" />
       <workItem from="1568312488730" duration="11803000" />
       <workItem from="1568570282317" duration="4783000" />
-      <workItem from="1569180873595" duration="2539000" />
+      <workItem from="1569180873595" duration="6564000" />
+      <workItem from="1569258388761" duration="1286000" />
+      <workItem from="1569343665932" duration="1290000" />
+      <workItem from="1569529961936" duration="130000" />
+      <workItem from="1570038183863" duration="2624000" />
     </task>
     <servers />
   </component>

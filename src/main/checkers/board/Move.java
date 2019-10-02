@@ -3,10 +3,12 @@ package main.checkers.board;
 public class Move {
     private Coordinates whereMoveBeginsFrom;
     private Coordinates whereMoveIsBeginMade;
+    private boolean isRedPawnToHit;
 
-    public Move(Coordinates whereMoveBeginsFrom, Coordinates whereMoveisBeginMade) {
+    public Move(Coordinates whereMoveBeginsFrom, Coordinates whereMoveisBeginMade, boolean isRedPawnToHit) {
         this.whereMoveBeginsFrom = whereMoveBeginsFrom;
         this.whereMoveIsBeginMade = whereMoveisBeginMade;
+        this.isRedPawnToHit = isRedPawnToHit;
     }
 
     public Coordinates getWhereMoveBeginsFrom() {
@@ -15,5 +17,9 @@ public class Move {
 
     public Coordinates getWhereMoveIsBeginMade() {
         return whereMoveIsBeginMade;
+    }
+
+    public boolean isRedPawnToHit() {
+        return isRedPawnToHit;
     }
 }

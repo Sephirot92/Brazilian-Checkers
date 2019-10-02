@@ -76,14 +76,14 @@ public class Board {
                         gridPane.setHgap(0);
                         gridPane.setVgap(0);
                         gridPane.setAlignment(Pos.CENTER);
-                        gridPane.setValignment(gridPane, VPos.CENTER);
+                        GridPane.setValignment(gridPane, VPos.CENTER);
                     } else {
                         gridPane.add(pawn.getImage(getFigure(j, i).getColor()), j, i);
                         gridPane.setPadding(new Insets(25, 0, 25, 10));
                         gridPane.setHgap(0);
                         gridPane.setVgap(0);
                         gridPane.setAlignment(Pos.CENTER);
-                        gridPane.setValignment(gridPane, VPos.CENTER);
+                        GridPane.setValignment(gridPane, VPos.CENTER);
                     }
                 }
             }
@@ -126,11 +126,7 @@ public class Board {
     private boolean isThereAnotherFigure(int x2, int y2, FigureColor isThereAFigureColor) {
         boolean check;
         isThereAFigureColor = getFigure(x2, y2).getColor();
-        if (isThereAFigureColor == FigureColor.NONE) {
-            check = true;
-        } else {
-            check = false;
-        }
+        check = isThereAFigureColor == FigureColor.NONE;
         return check;
     }
 
@@ -155,5 +151,14 @@ public class Board {
     }
     public List<BoardRow> getRows() {
         return rows;
+    }
+
+    public Board deepCopy() {
+        return new Board(rows, lastColor);
+    }
+
+    private Board(List<BoardRow> rows, FigureColor lastColor) {
+        this.rows = rows;
+        this.lastColor = lastColor;
     }
 }

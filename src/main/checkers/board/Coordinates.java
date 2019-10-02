@@ -16,4 +16,8 @@ public class Coordinates {
     public int getY1() {
         return y1;
     }
+
+    public static Coordinates of(int x1, int y1) {
+        return new Coordinates(x1, y1);
+    }
 }
