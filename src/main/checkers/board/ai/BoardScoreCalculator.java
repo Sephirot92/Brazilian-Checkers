@@ -1,10 +1,7 @@
-package main.checkers.board.ai;
+package checkers.board.ai;
 
-import main.checkers.board.Board;
-import main.checkers.board.BoardRow;
-import main.checkers.board.pawns.Figure;
-import main.checkers.board.pawns.FigureColor;
-import main.checkers.board.pawns.Pawn;
+import checkers.board.BoardRow;
+import checkers.board.pawns.FigureColor;
 
 import java.util.List;
 

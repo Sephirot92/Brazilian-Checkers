@@ -2,14 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5972f885-18dd-4365-ba15-1018c3dc3a89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/checkersTests/board/BoardRowTestSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/checkersTests/board/BoardTestSuite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Coordinates.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Coordinates.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Move.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Move.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/ai/AI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/ai/AI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BrazilianCheckers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BrazilianCheckers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/BrazilianCheckers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/BoardRow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Coordinates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Move.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/ai/AI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/ai/BoardScoreCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/ai/Score.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Figure.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/FigureColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/None.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Pawn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Queen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/game/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/BlackChecker.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/BlackCheckerQueen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/Checkers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/CheckersBoard2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/RedCheckers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/RedCheckersQueen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/BrazilianCheckers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/BrazilianCheckers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/BoardRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/BoardRow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/Coordinates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/Move.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/ai/AI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/ai/AI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/ai/BoardScoreCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/ai/BoardScoreCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/ai/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/ai/Score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/Figure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/FigureColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/FigureColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/None.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/None.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/checkers/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/game/Game.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +73,8 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -49,9 +85,16 @@
   <component name="ProjectId" id="1QA2TBMtuGUmWxqL2L0WjMVj00a" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -69,13 +112,19 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="main.checkers.board" />
+    </key>
+    <key name="IntroduceParameterObject.EXISTING_KEY">
+      <recent name="main.checkers.board.Coordinates" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="main.checkers.board.ai" />
       <recent name="main.checkers.board.pawns" />
       <recent name="main.BrazilianCheckers.Board" />
-    </key>
-    <key name="IntroduceParameterObject.EXISTING_KEY">
-      <recent name="main.checkers.board.Coordinates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -90,7 +139,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BoardTestSuite">
+    <configuration name="BrazilianCheckers (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="checkers.BrazilianCheckers" />
+      <module name="BrazilianCheckers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="checkers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BrazilianCheckers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.checkers.BrazilianCheckers" />
       <module name="BrazilianCheckers" />
@@ -104,8 +166,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BoardRowTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BrazilianCheckers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="checkersTests.board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="checkersTests.board" />
+      <option name="MAIN_CLASS_NAME" value="checkersTests.board.BoardRowTestSuite" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BrazilianCheckers" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="checkersTests.board.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="checkersTests.board" />
+      <option name="MAIN_CLASS_NAME" value="checkersTests.board.BoardTestSuite" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BoardTestSuite" />
+        <item itemvalue="Application.BrazilianCheckers (1)" />
+        <item itemvalue="JUnit.BoardRowTestSuite" />
         <item itemvalue="Application.BrazilianCheckers" />
       </list>
     </recent_temporary>
@@ -151,6 +246,7 @@
       <workItem from="1569343665932" duration="1290000" />
       <workItem from="1569529961936" duration="130000" />
       <workItem from="1570038183863" duration="2624000" />
+      <workItem from="1570295163788" duration="4290000" />
     </task>
     <servers />
   </component>
@@ -169,78 +265,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>BrazilianCheckers</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package main.checkers.board;
+package checkers.board;
 
 public class Move {
     private Coordinates whereMoveBeginsFrom;

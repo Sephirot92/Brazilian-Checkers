@@ -1,5 +1,8 @@
-package main.checkers;
+package checkers;
 
+import checkers.board.Board;
+import checkers.board.Coordinates;
+import checkers.game.Game;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -8,11 +11,6 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import main.checkers.board.Board;
-import main.checkers.board.Coordinates;
-import main.checkers.board.ai.BoardScoreCalculator;
-import main.checkers.board.ai.Score;
-import main.checkers.game.Game;
 
 import static javax.swing.SwingConstants.CENTER;
 

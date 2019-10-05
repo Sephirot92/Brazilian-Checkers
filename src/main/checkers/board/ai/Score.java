@@ -1,4 +1,4 @@
-package main.checkers.board.ai;
+package checkers.board.ai;
 
 public class Score {
     private int redScore;

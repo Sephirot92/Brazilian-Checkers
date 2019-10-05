@@ -1,7 +1,7 @@
-package main.checkers.board;
+package checkers.board;
 
-import main.checkers.board.pawns.Figure;
-import main.checkers.board.pawns.None;
+import checkers.board.pawns.Figure;
+import checkers.board.pawns.None;
 
 import java.util.ArrayList;
 import java.util.List;

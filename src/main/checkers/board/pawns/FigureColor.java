@@ -1,4 +1,4 @@
-package main.checkers.board.pawns;
+package checkers.board.pawns;
 
 public enum FigureColor {
     RED(-1),

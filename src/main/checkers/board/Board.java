@@ -1,14 +1,14 @@
-package main.checkers.board;
+package checkers.board;
 
+import checkers.board.ai.BoardScoreCalculator;
+import checkers.board.pawns.Figure;
+import checkers.board.pawns.FigureColor;
+import checkers.board.pawns.None;
+import checkers.board.pawns.Pawn;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.geometry.VPos;
 import javafx.scene.layout.GridPane;
-import main.checkers.board.ai.BoardScoreCalculator;
-import main.checkers.board.pawns.Figure;
-import main.checkers.board.pawns.FigureColor;
-import main.checkers.board.pawns.None;
-import main.checkers.board.pawns.Pawn;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ import java.util.List;
 public class Board {
 
 
-    private List<BoardRow> rows = new ArrayList<>();
+    protected List<BoardRow> rows = new ArrayList<>();
     protected FigureColor lastColor = FigureColor.BLACK;
 
     public Board() {

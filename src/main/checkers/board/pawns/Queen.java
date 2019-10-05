@@ -1,4 +1,4 @@
-package main.checkers.board.pawns;
+package checkers.board.pawns;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;

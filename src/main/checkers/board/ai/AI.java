@@ -1,16 +1,16 @@
-package main.checkers.board.ai;
+package checkers.board.ai;
 
-import main.checkers.board.Board;
-import main.checkers.board.Move;
-import main.checkers.board.pawns.FigureColor;
-import main.checkers.board.pawns.None;
+import checkers.board.Board;
+import checkers.board.Move;
+import checkers.board.pawns.FigureColor;
+import checkers.board.pawns.None;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static main.checkers.board.Coordinates.of;
+import static checkers.board.Coordinates.of;
 
 public class AI {
     public static Move selectBestMove(Board board) {

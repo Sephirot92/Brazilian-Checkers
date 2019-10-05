@@ -1,8 +1,8 @@
-package main.checkers.game;
+package checkers.game;
 
+import checkers.board.Board;
+import checkers.board.Coordinates;
 import javafx.scene.layout.GridPane;
-import main.checkers.board.Board;
-import main.checkers.board.Coordinates;
 
 
 public class Game {
