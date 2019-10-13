@@ -20,4 +20,12 @@ public class Coordinates {
     public static Coordinates of(int x1, int y1) {
         return new Coordinates(x1, y1);
     }
+
+    @Override
+    public String toString() {
+        return "Coordinates{" +
+                "x1=" + x1 +
+                ", y1=" + y1 +
+                '}';
+    }
 }

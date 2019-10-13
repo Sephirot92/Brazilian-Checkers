@@ -25,6 +25,11 @@ public class AI {
             }
         }
         BoardScoreCalculator boardScoreCalculator = new BoardScoreCalculator();
+        //Debug this line to see possible moves (F8) - check are there included hitting moves.
+        //If not, you will know that there is an error in  method possible moves.
+        //If they are present, you need to check the scoring function and you should check what are the calcuations results for every of those moves.
+        //It will give you the knowledge what is going on and where you have to fix what
+        // DEBUG AND BREAKPOINTS ARE CRUCIAL. thanks to them you can look into the variables, during frozen program execution.
 
         Map<Move, Score> scoring = new HashMap<>();
         for (Move move : possibleMoves) {
@@ -36,10 +41,18 @@ public class AI {
 
             scoring.put(move, score);
         }
+        Move bestMove = null;
+        int moveValue = 0;
+        for (Map.Entry<Move, Score> bestMoveToBeMade : scoring.entrySet()) {
+            if (moveValue < bestMoveToBeMade.getValue().getBlackScore()) {
+                moveValue = bestMoveToBeMade.getValue().getBlackScore();
+                bestMove = bestMoveToBeMade.getKey();
+            }
 
+        }
+        System.out.println("The best move is " + bestMove);
+        return bestMove;
         //READ ABOUT DEEP COPY ALSO YOU HAVE TO RETURN THIS MOVe, WHICH HAS THE BIGGEST SCORING AFTER ITERATING OVER WHOLE MAP.
-
-        return null;
     }
 
     private static List<Move> getPossibleMoves(Board board, int row, int col) {
@@ -57,13 +70,17 @@ public class AI {
     }
 
     private static void registerMoveWithHitIfPossible(Board board, int row, int col, ArrayList<Move> moves, int i, int i2) {
-        if (board.getFigure(i, row - 2) instanceof None && board.getFigure(i2, row - 1).getColor().equals(FigureColor.RED)) {
-            moves.add(new Move(of(col, row), of(i, row - 2), true));
+        if (row >= 2 && i >= 0 && i2 >= 0 && row <= 7 && i <= 7 && i2 <= 7 && col >= 0 && col <= 7) {
+            if (board.getFigure(i, row - 2) instanceof None && board.getFigure(i2, row - 1).getColor().equals(FigureColor.RED)) {
+                moves.add(new Move(of(col, row), of(i, row - 2), true));
+            }
         }
     }
 
     private static void registerMoveIfPossible(Board board, int row, int col, ArrayList<Move> moves, int i) {
-        if (board.getFigure(i, row - 1) instanceof None)
-            moves.add(new Move(of(col, row), of(i, row - 1), false));
+        if (row >= 2 && i >= 0 && row <= 7 && i <= 7 && col >= 0 && col <= 7) {
+            if (board.getFigure(i, row - 1) instanceof None)
+                moves.add(new Move(of(col, row), of(i, row - 1), false));
+        }
     }
 }

@@ -1,48 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5972f885-18dd-4365-ba15-1018c3dc3a89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/checkersTests/board/BoardRowTestSuite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/checkersTests/board/BoardTestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="5972f885-18dd-4365-ba15-1018c3dc3a89" name="Default Changelist" comment="&quot; Created first tests, added Junit to classpath&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BrazilianCheckers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BrazilianCheckers.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/BrazilianCheckers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Board.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/BoardRow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Coordinates.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/Move.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/ai/AI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/ai/BoardScoreCalculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/ai/Score.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Figure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/FigureColor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/None.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Pawn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/board/pawns/Queen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/main/checkers/game/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/BlackChecker.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/BlackCheckerQueen.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/Checkers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/CheckersBoard2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/RedCheckers.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BrazilianCheckers/resources/RedCheckersQueen.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/BrazilianCheckers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/BrazilianCheckers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/BoardRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/BoardRow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/Coordinates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/Move.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/board/ai/AI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/ai/AI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/ai/BoardScoreCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/ai/BoardScoreCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/ai/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/ai/Score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/FigureColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/FigureColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/None.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/None.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checkers/board/pawns/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/board/pawns/Queen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/checkers/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checkers/game/Game.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -139,7 +104,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BoardTestSuite">
+  <component name="RunManager" selected="Application.BrazilianCheckers (1)">
     <configuration name="BrazilianCheckers (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="checkers.BrazilianCheckers" />
       <module name="BrazilianCheckers" />
@@ -198,8 +163,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BoardTestSuite" />
         <item itemvalue="Application.BrazilianCheckers (1)" />
+        <item itemvalue="JUnit.BoardTestSuite" />
         <item itemvalue="JUnit.BoardRowTestSuite" />
         <item itemvalue="Application.BrazilianCheckers" />
       </list>
@@ -246,8 +211,18 @@
       <workItem from="1569343665932" duration="1290000" />
       <workItem from="1569529961936" duration="130000" />
       <workItem from="1570038183863" duration="2624000" />
-      <workItem from="1570295163788" duration="4290000" />
+      <workItem from="1570295163788" duration="5094000" />
+      <workItem from="1570354863769" duration="5578000" />
+      <workItem from="1570992508632" duration="2492000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot; Created first tests, added Junit to classpath&quot;">
+      <created>1570299556043</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570299556043</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,5 +240,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="&quot; Created first tests, added Junit to classpath&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot; Created first tests, added Junit to classpath&quot;" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/checkers/board/ai/AI.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

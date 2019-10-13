@@ -59,6 +59,7 @@ public class BrazilianCheckers extends Application {
 
         game.playGame();
 
+
         primaryStage.setTitle("Brazilian Checkers");
         primaryStage.setScene(scene);
         primaryStage.show();

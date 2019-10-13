@@ -1,10 +1,7 @@
 package checkers.board;
 
 import checkers.board.ai.BoardScoreCalculator;
-import checkers.board.pawns.Figure;
-import checkers.board.pawns.FigureColor;
-import checkers.board.pawns.None;
-import checkers.board.pawns.Pawn;
+import checkers.board.pawns.*;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.geometry.VPos;
@@ -34,7 +31,6 @@ public class Board {
     }
 
     public void initBoard() {
-        //SetFigure for Red Pawns
         setFigure(0, 0, new Pawn(FigureColor.RED));
         setFigure(0, 2, new Pawn(FigureColor.RED));
         setFigure(1, 1, new Pawn(FigureColor.RED));
@@ -48,7 +44,6 @@ public class Board {
         setFigure(6, 2, new Pawn(FigureColor.RED));
         setFigure(7, 1, new Pawn(FigureColor.RED));
 
-        //SetFigure for black Pawns
         setFigure(0, 6, new Pawn(FigureColor.BLACK));
         setFigure(1, 5, new Pawn(FigureColor.BLACK));
         setFigure(1, 7, new Pawn(FigureColor.BLACK));
@@ -138,6 +133,7 @@ public class Board {
 
         BoardScoreCalculator calculator = new BoardScoreCalculator();
         calculator.calculateScore(rows);
+
     }
 
     private void doKill(Coordinates coordinatesOfFigureWhichWillKill, Coordinates coordinatesOfFigureWhichWillBeKilled) {
@@ -158,7 +154,25 @@ public class Board {
     }
 
     private Board(List<BoardRow> rows, FigureColor lastColor) {
-        this.rows = rows;
+        List<BoardRow> copiedRows = new ArrayList<>();
+        for (BoardRow boardRow : rows) {
+            BoardRow newRow = new BoardRow();
+            for (Figure figure : boardRow.getCols()) {
+                Figure newFigure = getNewFigure(figure);
+                newRow.getCols().add(newFigure);
+            }
+            copiedRows.add(newRow);
+        }
+        this.rows = copiedRows;
         this.lastColor = lastColor;
+    }
+
+    private Figure getNewFigure(Figure figure) {
+        if (figure instanceof Pawn)
+            return new Pawn(figure.getColor());
+        else if (figure instanceof Queen)
+            return new Queen(figure.getColor());
+        else
+            return new None();
     }
 }

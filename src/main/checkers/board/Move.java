@@ -22,4 +22,13 @@ public class Move {
     public boolean isRedPawnToHit() {
         return isRedPawnToHit;
     }
+
+    @Override
+    public String toString() {
+        return "Move{" +
+                "whereMoveBeginsFrom=" + whereMoveBeginsFrom +
+                ", whereMoveIsBeginMade=" + whereMoveIsBeginMade +
+                ", isRedPawnToHit=" + isRedPawnToHit +
+                '}';
+    }
 }
