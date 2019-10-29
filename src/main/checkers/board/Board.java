@@ -1,6 +1,5 @@
 package checkers.board;
 
-import checkers.board.ai.BoardScoreCalculator;
 import checkers.board.pawns.*;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -109,7 +108,6 @@ public class Board {
         }
     }
 
-
     private boolean isMoveDiagonalOneField(Coordinates begginingCoordinates, Coordinates finalCoordinatesAfterMove, FigureColor color) {
         return (color == FigureColor.BLACK && begginingCoordinates.getY1() - finalCoordinatesAfterMove.getY1() == 1 && Math.abs(finalCoordinatesAfterMove.getX1() - begginingCoordinates.getX1()) == 1) || (color == FigureColor.RED && finalCoordinatesAfterMove.getY1() - begginingCoordinates.getY1() == 1 && Math.abs(finalCoordinatesAfterMove.getX1() - begginingCoordinates.getX1()) == 1);
     }
@@ -131,8 +129,8 @@ public class Board {
         setFigure(coordinatesAfterTheMoveIsDone.getX1(), coordinatesAfterTheMoveIsDone.getY1(), figure);
         setFigure(moveBeggingCoordinates.getX1(), moveBeggingCoordinates.getY1(), new None());
 
-        BoardScoreCalculator calculator = new BoardScoreCalculator();
-        calculator.calculateScore(rows);
+//        BoardScoreCalculator calculator = new BoardScoreCalculator();
+//        calculator.calculateScore(rows, move.isRedPawnToHit());
 
     }
 

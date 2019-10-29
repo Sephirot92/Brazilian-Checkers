@@ -25,11 +25,6 @@ public class AI {
             }
         }
         BoardScoreCalculator boardScoreCalculator = new BoardScoreCalculator();
-        //Debug this line to see possible moves (F8) - check are there included hitting moves.
-        //If not, you will know that there is an error in  method possible moves.
-        //If they are present, you need to check the scoring function and you should check what are the calcuations results for every of those moves.
-        //It will give you the knowledge what is going on and where you have to fix what
-        // DEBUG AND BREAKPOINTS ARE CRUCIAL. thanks to them you can look into the variables, during frozen program execution.
 
         Map<Move, Score> scoring = new HashMap<>();
         for (Move move : possibleMoves) {
@@ -37,18 +32,27 @@ public class AI {
 
             underTest.move(move.getWhereMoveBeginsFrom(), move.getWhereMoveIsBeginMade());
 
-            Score score = boardScoreCalculator.calculateScore(underTest.getRows());
+            Score score = boardScoreCalculator.calculateScore(underTest.getRows(), move.isRedPawnToHit());
 
             scoring.put(move, score);
         }
         Move bestMove = null;
         int moveValue = 0;
         for (Map.Entry<Move, Score> bestMoveToBeMade : scoring.entrySet()) {
-            if (moveValue < bestMoveToBeMade.getValue().getBlackScore()) {
-                moveValue = bestMoveToBeMade.getValue().getBlackScore();
-                bestMove = bestMoveToBeMade.getKey();
+            if (bestMoveToBeMade.getValue().isBlackAbleToHit()) {
+                if (moveValue < bestMoveToBeMade.getValue().getBlackScore()) {
+                    moveValue = bestMoveToBeMade.getValue().getBlackScore();
+                    bestMove = bestMoveToBeMade.getKey();
+                }
             }
-
+        }
+        if (moveValue == 0) {
+            for (Map.Entry<Move, Score> bestMoveToBeMade : scoring.entrySet()) {
+                if (moveValue < bestMoveToBeMade.getValue().getBlackScore()) {
+                    moveValue = bestMoveToBeMade.getValue().getBlackScore();
+                    bestMove = bestMoveToBeMade.getKey();
+                }
+            }
         }
         System.out.println("The best move is " + bestMove);
         return bestMove;

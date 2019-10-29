@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class BoardRowTestSuite {
+
     @Test
     public void testGetBoardRow() {
         //Given
