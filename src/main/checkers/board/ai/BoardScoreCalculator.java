@@ -6,13 +6,13 @@ import checkers.board.pawns.FigureColor;
 import java.util.List;
 
 public class BoardScoreCalculator {
-    public Score calculateScore(List<BoardRow> rows) {
-        Score actualScore = scoreCalculatedByNumberOfPawnsLeft(rows);
+    public Score calculateScore(List<BoardRow> rows, boolean redPawnToHit) {
+        Score actualScore = scoreCalculatedByNumberOfPawnsLeft(rows, redPawnToHit);
         outprintOfTheScore(rows);
         return actualScore;
     }
 
-    public Score scoreCalculatedByNumberOfPawnsLeft(List<BoardRow> rows) {
+    public Score scoreCalculatedByNumberOfPawnsLeft(List<BoardRow> rows, boolean redPawnToHit) {
         int scoreAtTheBegginignForRed = 0;
         int scoreAtTheBegginingForBlack = 0;
 
@@ -25,13 +25,13 @@ public class BoardScoreCalculator {
                 }
             }
         }
-        Score scoreByNumberOfPawnsLeft = new Score(scoreAtTheBegginignForRed, scoreAtTheBegginingForBlack);
+        Score scoreByNumberOfPawnsLeft = new Score(scoreAtTheBegginignForRed, scoreAtTheBegginingForBlack, redPawnToHit);
         return scoreByNumberOfPawnsLeft;
     }
 
 
     public void outprintOfTheScore(List<BoardRow> rows){
-        System.out.println(scoreCalculatedByNumberOfPawnsLeft(rows));
+        System.out.println(scoreCalculatedByNumberOfPawnsLeft(rows, false));
     }
 }
 
