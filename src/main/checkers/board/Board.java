@@ -93,15 +93,30 @@ public class Board {
         if (isRedOrBlackChoosen(color) && (color != lastColor)) {
             if (isThereAnotherFigure(finalCoordinates.getX1(), finalCoordinates.getY1(), isThereAFigureColor)) {
                 if (isMoveDiagonalOneField(new Coordinates(beginingCoordinates.getX1(), beginingCoordinates.getY1()), new Coordinates(finalCoordinates.getX1(), finalCoordinates.getY1()), color)) {
-                    doMove(new Coordinates(beginingCoordinates.getX1(), beginingCoordinates.getY1()), new Coordinates(finalCoordinates.getX1(), finalCoordinates.getY1()));
-                    lastColor = color;
-                } else {
-                    int dy = (finalCoordinates.getY1() > beginingCoordinates.getY1()) ? 1 : -1;
-                    int dx = (finalCoordinates.getX1() > beginingCoordinates.getX1()) ? 1 : -1;
-                    FigureColor colorOfFigureToBeKilled = getFigure(finalCoordinates.getX1() - dx, finalCoordinates.getY1() - dy).getColor();
-                    if (color != colorOfFigureToBeKilled) {
-                        doKill(new Coordinates(beginingCoordinates.getX1(), beginingCoordinates.getY1()), new Coordinates(finalCoordinates.getX1(), finalCoordinates.getY1()));
+                    Coordinates oldCooridantes = beginingCoordinates;
+                    Coordinates futureCoordinates = finalCoordinates;
+                    boolean moveChecker = true;
+                    if (oldCooridantes.equals(futureCoordinates) || futureCoordinates.equals(oldCooridantes))
+                        moveChecker = false;
+                    if (moveChecker) {
+                        doMove(new Coordinates(oldCooridantes.getX1(), oldCooridantes.getY1()), new Coordinates(futureCoordinates.getX1(), futureCoordinates.getY1()));
                         lastColor = color;
+                    }
+
+                } else {
+                    Coordinates oldCooridantes = beginingCoordinates;
+                    Coordinates futureCoordinates = finalCoordinates;
+                    boolean moveChecker = true;
+                    if (oldCooridantes.getX1() == futureCoordinates.getX1() || oldCooridantes.getY1() == futureCoordinates.getY1())
+                        moveChecker = false;
+                    if (moveChecker) {
+                        int dy = (finalCoordinates.getY1() > beginingCoordinates.getY1()) ? 1 : -1;
+                        int dx = (finalCoordinates.getX1() > beginingCoordinates.getX1()) ? 1 : -1;
+                        FigureColor colorOfFigureToBeKilled = getFigure(finalCoordinates.getX1() - dx, finalCoordinates.getY1() - dy).getColor();
+                        if (color != colorOfFigureToBeKilled && color != FigureColor.NONE) {
+                            doKill(new Coordinates(beginingCoordinates.getX1(), beginingCoordinates.getY1()), new Coordinates(finalCoordinates.getX1(), finalCoordinates.getY1()));
+                            lastColor = color;
+                        }
                     }
                 }
             }
